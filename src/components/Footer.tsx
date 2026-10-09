@@ -7,23 +7,14 @@ const footerLinks = {
   contact: {
     heading: "CONTACT",
     links: [
-      { label: "rabi@email.com", href: "mailto:rabi@email.com" },
+      { label: "dev.rabiulawal@gmail.com", href: "mailto:dev.rabiulawal@gmail.com" },
     ],
   },
   social: {
     heading: "SOCIAL",
     links: [
-      { label: "LINKEDIN", href: "https://linkedin.com" },
-      { label: "GITHUB", href: "https://github.com" },
-      { label: "TWITTER / X", href: "https://x.com" },
-    ],
-  },
-  projects: {
-    heading: "PROJECTS",
-    links: [
-      { label: "TECHMART", href: "#projects" },
-      { label: "INVOMIZE", href: "#projects" },
-      { label: "DESKTOP SHOPPING", href: "#projects" },
+      { label: "LINKEDIN", href: "https://www.linkedin.com/in/rabi-ul-awal" },
+      { label: "GITHUB", href: "https://github.com/DevRabiulawal" },
     ],
   },
 };
@@ -43,7 +34,7 @@ export default function Footer() {
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
         {/* Footer Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-12 sm:gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:gap-8 mb-16">
           {Object.values(footerLinks).map((section) => (
             <div key={section.heading}>
               <h4 className="font-mono text-xs font-bold tracking-widest text-text mb-4">
@@ -70,19 +61,19 @@ export default function Footer() {
         {/* Big Name — Bermawy-style footer logo */}
         <div className="relative overflow-hidden py-4">
           <div
-            className="font-mono text-[clamp(3rem,12vw,8rem)] font-bold leading-none tracking-tighter text-transparent select-none"
+            className="font-mono text-[clamp(2rem,7.5vw,5.5rem)] font-bold leading-none tracking-tighter text-transparent select-none whitespace-nowrap"
             style={{
               WebkitTextStroke: "1.5px rgba(26, 26, 26, 0.12)",
             }}
           >
-            RABI
+            RABI UL AWAL
           </div>
         </div>
 
         {/* Copyright */}
         <div className="mt-6 pt-4 border-t border-border/40">
           <p className="font-mono text-[10px] text-text-muted tracking-wider">
-            © 2026 RABI. All rights reserved.
+            © 2026 RABI UL AWAL. All rights reserved.
           </p>
         </div>
       </motion.div>

@@ -2,6 +2,8 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
+import Image from "next/image";
+import portfolioData from "@/data/portfolio.json";
 
 export default function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -51,35 +53,19 @@ export default function Hero() {
             className="relative w-full max-w-[320px]"
           >
             <div className="aspect-[3/4] bg-bg-card border border-border relative overflow-hidden group">
-              {/* Sketch-style portrait placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <svg
-                  viewBox="0 0 200 260"
-                  className="w-3/4 h-3/4 opacity-60 group-hover:opacity-80 transition-opacity duration-300"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                >
-                  {/* Head */}
-                  <ellipse cx="100" cy="80" rx="45" ry="55" className="text-text" />
-                  {/* Eyes */}
-                  <circle cx="82" cy="72" r="8" className="text-accent" strokeWidth="2" />
-                  <circle cx="118" cy="72" r="8" className="text-accent" strokeWidth="2" />
-                  <circle cx="82" cy="72" r="3" fill="currentColor" className="text-text" />
-                  <circle cx="118" cy="72" r="3" fill="currentColor" className="text-text" />
-                  {/* Nose */}
-                  <path d="M100 80 L96 95 L104 95" className="text-text" />
-                  {/* Mouth */}
-                  <path d="M88 105 Q100 115 112 105" className="text-text" />
-                  {/* Body */}
-                  <path d="M55 135 Q100 125 145 135 L155 260 L45 260 Z" className="text-text" />
-                  {/* Collar detail */}
-                  <path d="M75 135 L100 155 L125 135" className="text-text" />
-                </svg>
+              {/* Portrait */}
+              <div className="absolute inset-0">
+                <Image
+                  src="/profile.jpg"
+                  alt="Rabi ul awal"
+                  fill
+                  className="object-cover opacity-90 group-hover:opacity-100 transition-all duration-500 hover:scale-105"
+                  priority
+                />
               </div>
               {/* Blue corner accent */}
-              <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-accent" />
-              <div className="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-accent" />
+              <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-accent z-10 pointer-events-none" />
+              <div className="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-accent z-10 pointer-events-none" />
             </div>
           </motion.div>
         </div>
@@ -92,33 +78,20 @@ export default function Hero() {
           className="flex flex-col gap-6 md:pt-8"
         >
           <p className="font-mono text-sm sm:text-base leading-relaxed text-text">
-            Rabi here, nice to meet you 👋
+            {portfolioData.personal.name} here, nice to meet you!
             <br />
             <br />
             I am a{" "}
-            <span className="link-reveal cursor-default">Data Science undergraduate</span>{" "}
-            and{" "}
-            <span className="link-reveal cursor-default">UI/UX Designer</span>{" "}
-            bridging the gap between heavy backend AI and beautiful frontends.
+            <span className="link-reveal cursor-default">{portfolioData.personal.title}</span>.
           </p>
 
           <p className="font-mono text-sm sm:text-base leading-relaxed text-text-muted">
-            I build intelligent systems that are as elegant as they are functional —
-            from RAG-powered AI agents to automated enterprise portals. I believe
-            great software should feel invisible yet powerful.
+            {portfolioData.personal.bio}
           </p>
 
           {/* Tech pills */}
           <div className="flex flex-wrap gap-2 mt-2">
-            {[
-              "Python",
-              "Next.js",
-              "LangChain",
-              "Figma",
-              "TensorFlow",
-              "C#",
-              "TypeScript",
-            ].map((tech) => (
+            {portfolioData.skills.map((tech) => (
               <span
                 key={tech}
                 className="font-mono text-[10px] font-bold tracking-wider uppercase px-3 py-1 border border-border text-text-muted hover:border-accent hover:text-accent hover:bg-accent-light transition-all duration-200 cursor-default"

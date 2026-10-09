@@ -17,20 +17,20 @@ const specialElite = Special_Elite({
 });
 
 export const metadata: Metadata = {
-  title: "Rabi | Data Science & UI/UX Portfolio",
+  title: "Rabi ul awal | Data Scientist & UI/UX Designer",
   description:
-    "Rabi — Data Science undergraduate and UI/UX Designer bridging the gap between heavy backend AI and beautiful frontends.",
+    "Portfolio of Rabi ul awal, a Data Scientist and UI/UX Designer specializing in building autonomous AI agents, machine learning pipelines, and elegant, user-centric web applications.",
   openGraph: {
-    title: "Rabi | Data Science & UI/UX Portfolio",
+    title: "Rabi ul awal | Data Scientist & UI/UX Designer",
     description:
-      "Rabi — Data Science undergraduate and UI/UX Designer bridging the gap between heavy backend AI and beautiful frontends.",
+      "Portfolio of Rabi ul awal, a Data Scientist and UI/UX Designer specializing in building autonomous AI agents, machine learning pipelines, and elegant, user-centric web applications.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rabi | Data Science & UI/UX Portfolio",
+    title: "Rabi ul awal | Data Scientist & UI/UX Designer",
     description:
-      "Rabi — Data Science undergraduate and UI/UX Designer bridging the gap between heavy backend AI and beautiful frontends.",
+      "Portfolio of Rabi ul awal, a Data Scientist and UI/UX Designer specializing in building autonomous AI agents, machine learning pipelines, and elegant, user-centric web applications.",
   },
 };
 

@@ -1,0 +1,130 @@
+{
+  "personal": {
+    "name": "Rabi",
+    "title": "Data Scientist | Building with AI & Data-Driven Algorithms",
+    "bio": "From a young age, I’ve been captivated by computers. Today, I harness the power of AI to develop innovative chatbots, create visually engaging websites, and work on agentic AI projects. My approach combines analytical thinking with creative problem-solving to deliver solutions that enhance user experience and solve complex challenges. I strive to make a meaningful impact in the ever-evolving landscape of data science."
+  },
+  "skills": [
+    "Python",
+    "Node.js",
+    "Machine Learning",
+    "Supervised & Unsupervised Learning",
+    "Scikit-Learn",
+    "Pandas",
+    "Agentic AI Development",
+    "Chatbot Development",
+    "n8n (Workflow Automation)",
+    "Data Analysis & Visualization",
+    "UI/UX Design",
+    "Graphic Design",
+    "Adobe Lightroom",
+    "Video Editing & Color Grading"
+  ],
+  "experience": [
+    {
+      "role": "Data Science Intern",
+      "company": "Decodelabs",
+      "date": "Jun 2026 - Aug 2026",
+      "location": "Remote",
+      "description": "Engaged in a rigorous virtual internship program. Collaborated on data science projects to gain practical industry experience, managed project timelines, and participated in mentor-led sessions to refine technical problem-solving skills."
+    },
+    {
+      "role": "Machine Learning Intern",
+      "company": "CodeAlpha",
+      "date": "Jul 2026 - Aug 2026",
+      "location": "Remote",
+      "description": "Focused on Artificial Intelligence, supervised learning, and unsupervised learning applications."
+    },
+    {
+      "role": "Amazon Catalog Specialist",
+      "company": "Invomize",
+      "date": "Jul 2026 - Aug 2026",
+      "location": "Pakistan",
+      "description": "Managed and optimized the Amazon product catalog through Seller Central, focusing on listing health, SEO, and troubleshooting suppressed ASINs. Streamlined flat-file bulk uploads to help increase organic traffic by 42% and reduce listing errors by 82%."
+    }
+  ],
+  "projects": [
+    {
+      "name": "TechMart RAG AI Chatbot",
+      "description": "Built a Retrieval-Augmented Generation (RAG) Streamlit app...",
+      "techStack": [
+        "Streamlit",
+        "RAG",
+        "LLMs",
+        "Python"
+      ],
+      "image": "/projects/videoframe_22976.png"
+    },
+    {
+      "name": "Loan Approval Predictor",
+      "description": "Built a K-Nearest Neighbors (KNN) classification model...",
+      "techStack": [
+        "Python",
+        "Scikit-Learn",
+        "Next.js",
+        "Matplotlib",
+        "Pandas",
+        "KNN"
+      ],
+      "image": "/projects/1782994086736.jpg"
+    },
+    {
+      "name": "AdVantage | AI-Powered Predictive Ad Sales Platform",
+      "description": "Developed a predictive analytics dashboard...",
+      "techStack": [
+        "Machine Learning",
+        "Predictive Analytics",
+        "Full-Stack Development"
+      ],
+      "image": "/projects/image_7980a0.png"
+    },
+    {
+      "name": "End-to-End House Price Predictor",
+      "description": "Engineered a full end-to-end Machine Learning model...",
+      "techStack": [
+        "Python",
+        "Scikit-Learn",
+        "Next.js",
+        "Matplotlib",
+        "Pandas",
+        "Multiple Linear Regression"
+      ],
+      "image": "/projects/videoframe_9416.png"
+    },
+    {
+      "name": "Autonomous Email Agent",
+      "description": "Engineered a fully autonomous AI email agent...",
+      "techStack": [
+        "n8n",
+        "LLMs",
+        "Automated Pipelines",
+        "AI Automation"
+      ],
+      "image": "/projects/image_7980db.png"
+    },
+    {
+      "name": "MYOS Collective E-Commerce Platform",
+      "description": "Leveraged AI-assisted development tools to build the complete website...",
+      "techStack": [
+        "Lovable",
+        "AI Web Development",
+        "UI/UX"
+      ],
+      "image": "/projects/Screenshot 2026-10-09 222255.png"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Data Science Intern",
+      "issuer": "Decodelabs",
+      "date": "Jul 2026",
+      "url": "https://www.linkedin.com/in/rabi-ul-awal/overlay/Certifications/1112737705/treasury/?profileId=ACoAADYaKIsBZhp8JkQTn9xyTUmTT9u0TGKN1hk"
+    },
+    {
+      "name": "AI based Email Agent with N8N",
+      "issuer": "DataCrumbs",
+      "date": "Jun 2026",
+      "url": "https://www.linkedin.com/in/rabi-ul-awal/overlay/Certifications/2039133690/treasury/?profileId=ACoAADYaKIsBZhp8JkQTn9xyTUmTT9u0TGKN1hk"
+    }
+  ]
+}

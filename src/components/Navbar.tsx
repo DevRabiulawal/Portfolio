@@ -16,8 +16,8 @@ export default function Navbar() {
     >
       <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
         {/* Brand */}
-        <Link href="/" className="font-mono text-sm font-bold tracking-widest uppercase text-text hover:text-accent transition-colors duration-200">
-          Rabi
+        <Link href="/" className="font-mono text-sm font-bold tracking-widest text-text hover:text-accent transition-colors duration-200">
+          Rabi ul awal
         </Link>
 
         {/* Desktop Nav */}
