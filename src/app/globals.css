@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+/* ============================================
+   DESIGN SYSTEM — Bermawy-inspired Portfolio
+   ============================================ */
+
+@theme {
+  /* Color Palette — Stark monochrome + blue accent */
+  --color-bg: #f9f9f9;
+  --color-bg-card: #e8e8e8;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b6b;
+  --color-accent: #345aaa;
+  --color-accent-light: #e6f3ff;
+  --color-border: #bdbdbd;
+  --color-divider: #345aaa;
+  --color-white: #ffffff;
+
+  /* Typography Scale */
+  --font-mono: "Cousine", "Courier New", monospace;
+  --font-display: "Special Elite", cursive;
+
+  /* Spacing */
+  --spacing-section: 80px;
+  --spacing-container: 64px;
+
+  /* Transition */
+  --ease-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ============================================
+   GLOBAL — Base Styles
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-mono);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================
+   GLOBAL — Notebook Grid Background
+   ============================================ */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(189, 189, 189, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(189, 189, 189, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Left blue margin line (notebook feel) */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 48px;
+  width: 2px;
+  height: 100vh;
+  background: rgba(52, 90, 170, 0.12);
+  z-index: -1;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  body::after {
+    left: 16px;
+  }
+}
+
+/* ============================================
+   GLOBAL — Custom Scrollbar
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+  border-left: 1px solid var(--color-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-light);
+  border: 1px solid var(--color-accent);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+}
+
+/* ============================================
+   GLOBAL — Selection
+   ============================================ */
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+/* ============================================
+   UTILITY — Section Heading with Divider
+   ============================================ */
+
+.section-heading {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+  color: var(--color-text);
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-divider);
+  margin-bottom: 32px;
+}
+
+/* ============================================
+   UTILITY — Link Underline Reveal
+   ============================================ */
+
+.link-reveal {
+  position: relative;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.link-reveal::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width 0.3s var(--ease-smooth);
+}
+
+.link-reveal:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   UTILITY — Card Hover
+   ============================================ */
+
+.card-hover {
+  transition: transform 0.3s var(--ease-smooth), box-shadow 0.3s var(--ease-smooth);
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(52, 90, 170, 0.08);
+}
+
+/* ============================================
+   KEYFRAMES — Cursor Blink
+   ============================================ */
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* ============================================
+   KEYFRAMES — Marquee
+   ============================================ */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* ============================================
+   RESPONSIVE — Typography Scale
+   ============================================ */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+}
